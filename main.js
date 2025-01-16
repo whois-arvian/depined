@@ -35,7 +35,7 @@ const main = async () => {
 
                     const result = await utils.getEarnings(token, proxy);
                     log.info(`Earnings result for account ${index + 1}:`, result?.data || { message: 'unknown error' });
-                }, 1000 * 30); // Run every 30 seconds
+                }, 1000 * 30);
 
             } catch (error) {
                 log.error(`Error processing account ${index}: ${error.message}`);
